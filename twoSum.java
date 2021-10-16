@@ -16,6 +16,22 @@ class Solution {
         mp[target-nums[i]]
             
         }
+        
+        for(int i=0; i<nums.length; i++){
+            if(map.containsKey(target-nums[i])){
+                
+                ans[0] = map.get(target-nums[i]);
+                ans[1] = i;
+                return ans;
+            }
+            
+                map.put(nums[i], i);
+            
+        mp[target-nums[i]]
+            
+        }
+        
+        
         return ans;
     }
 }
